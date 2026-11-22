@@ -7,7 +7,7 @@ The map takes only the initial state $X_0$ and the Legendre coefficients $\hat{I
 
 ## Motivation
 
-*Strong Stochastic Flow Maps* (McCallum, Blasingame et al., 2026) learns a map $ \Psi(x, \hat{I}, h) $ that sends a state $X_s$ and the Legendre coefficients $\hat{I}$ of the Brownian path on $[s, s+h]$ to the state $X_{s+h}$ on the same path. Training combines a tangent loss on short windows with a semigroup (self-distillation) loss that composes the map over two half-windows.
+*Strong Stochastic Flow Maps* (McCallum, Blasingame et al., 2026) learns a map  $\Psi(x, \hat{I}, h)$  that sends a state $X_s$ and the Legendre coefficients $\hat{I}$ of the Brownian path on $[s, s+h]$ to the state $X_{s+h}$ on the same path. Training combines a tangent loss on short windows with a semigroup (self-distillation) loss that composes the map over two half-windows.
 
 The original formulation uses an additive parameterization, $y + hf + wg$ with $w = W_{s+h} - W_s$, whose existence argument relies on additive noise. In contrast, the CIR process
 
